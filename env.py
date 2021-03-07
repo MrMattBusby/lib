@@ -22,7 +22,10 @@ class Env(object):
         return os.getcwd()  # Str
     @property
     def distro(self):
-        return ' '.join(platform.linux_distribution())  # Str
+        try:
+            return ' '.join(platform.linux_distribution())  # Str
+        except AttributeError:
+            return ''
     @property
     def ls(self):
         return os.listdir('.')  # List
