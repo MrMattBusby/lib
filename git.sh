@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ALL=( ~/lib ~/runcoms ~/bin-tools ~/helpfiles )
+ALL=( ~/lib ~/runcoms ~/bin-tools ~/helpfiles ~/vim-config )
 
 function main {
   pushd ~ 1> /dev/null
