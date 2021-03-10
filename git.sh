@@ -7,7 +7,7 @@ function main {
   for each in ${ALL[@]} ; do
     echo "===================== ${each} ====================="
     pushd ${each} 1> /dev/null
-    git $1 ${each}
+    git $1
     popd 1> /dev/null
   done
   popd 1> /dev/null
