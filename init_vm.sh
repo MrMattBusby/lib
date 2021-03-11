@@ -88,7 +88,7 @@ function func_link {
   ln -s runcoms/.bash_aliases
   ln -s runcoms/.bash_custom
   ln -s runcoms/.gitconfig
-  ln -s runcoms/.vimrm
+  ln -s runcoms/.vimrc
   ln -s runcoms/.pythonrc.py
   ln -s vim-config .vim
   ln -s lib/git.sh
@@ -128,8 +128,8 @@ if [ "$#" -eq 1 ] ; then
 else
   func_clone
   func_link
-  func_env
-  sudo sh -c "$(declare -f sudo_func_env) ; sudo_func_env"
-  sudo sh -c "$(declare -f sudo_func_yum) ; sudo_func_yum"
-  func_python
+  #func_env
+  #sudo sh -c "$(declare -f sudo_func_env) ; sudo_func_env"
+  #sudo sh -c "$(declare -f sudo_func_yum) ; sudo_func_yum"
+  #func_python
 fi
